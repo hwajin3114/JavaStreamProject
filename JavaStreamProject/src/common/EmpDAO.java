@@ -15,7 +15,7 @@ public class EmpDAO {
 
 	public static List<Employee> getEmpList() {
 		List<Employee> list = new ArrayList<>();
-		String sql = "select * from employees where salary >= 10000";
+		String sql = "select * from employees";
 
 		try {
 			pstmt = conn.prepareStatement(sql);
